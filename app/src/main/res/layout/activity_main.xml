@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF1F2F4"
+    android:backgroundTint="#FAFAFB"
+    android:backgroundTintMode="screen"
+    android:clickable="false"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:foregroundTint="#F4EEEE"
+    android:hapticFeedbackEnabled="true"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="366dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="48dp"
+        android:background="#3F51B5"
+        android:backgroundTint="#FBFFFFFF"
+        android:foregroundTint="#805555"
+        android:rotationX="-3"
+        android:shadowColor="#4CAF50"
+        android:soundEffectsEnabled="true"
+        android:text="Sorteio"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#080809"
+        android:textColorHint="@color/black"
+        android:textColorLink="#57D0CED5"
+        android:textCursorDrawable="@drawable/ic_launcher_background"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="334dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="108dp"
+        android:onClick="sortear"
+        android:text="SORTEIO ALEATÓRIO"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/text_resultado"
+        android:layout_width="259dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="44dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#89FBFAFB"
+        android:text="Resultado"
+        android:textAlignment="center"
+        android:textColor="#050505"
+        android:textColorHighlight="#822727"
+        android:textColorHint="#A32323"
+        android:textColorLink="#0D0C0C"
+        android:textSize="34sp"
+        app:drawableStartCompat="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="101dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="36dp"
+        android:onClick="reiniciar"
+        android:text="Limpar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="363dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:hint="Escreva sua pergunta"
+        android:labelFor="@id/textView"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="166dp"
+        android:layout_height="11dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_resultado"
+        app:srcCompat="?attr/actionBarDivider" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
